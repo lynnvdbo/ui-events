@@ -135,4 +135,43 @@ a[href="#and"] {
   }
 }
 
+/* Shake animation on the Development link */
+.shake {
+  animation-name: --shakeUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.shake:hover{
+  animation-name: --shakeUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  background-color: var(--highlight-secondary);
+}
+
+@keyframes --shakeUp {
+  0% { 
+    transform: rotate(-15deg); 
+  }
+
+  5% { 
+    transform: rotate(15deg); 
+  }
+
+  10% {
+    transform: rotate(-15deg); 
+  }
+  
+  15% { 
+    transform: rotate(15deg); 
+  }
+
+  20% { 
+    transform: rotate(0deg); 
+  }
+  
+  100% { 
+    transform: rotate(0deg); 
+  }  
+}
 
