@@ -108,3 +108,31 @@ a[href="#frontend"] {
     transform: scale(1);
   }
 }
+
+/* Translate animation on the & link */
+a[href="#and"] {
+  background-color: var(--highlight-secondary);
+  color: var(--secondary);
+}
+
+.translate {
+  animation-name: --slide-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes --slide-in {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(30em);
+  }
+
+  100% {
+    transform: translateX(0em);
+  }
+}
+
+
