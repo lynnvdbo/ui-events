@@ -175,3 +175,36 @@ a[href="#and"] {
   }  
 }
 
+/* Focus animation on the Sprint 5 link */
+a[href="#sprint-5"] {
+  color: var(--highlight-secondary);
+}
+
+.down {
+  animation-name: --slide-down;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  background-color: rgb(255, 209, 124);
+  color: #050840;
+}
+
+
+@keyframes --slide-down {
+  0% {
+    transform: translateY(0);
+    background-color: aqua;
+  }
+
+  50% {
+    transform: translateY(6.7em);
+    background-color: palevioletred;
+
+  }
+
+  100% {
+    transform: translateY(0em);
+    background-color: rgb(49, 160, 49);
+
+  }
+}
+

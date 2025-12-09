@@ -84,6 +84,28 @@ developmentLink.addEventListener("animationend", function(){
 })
 
 
+// 5 knop sprint5
+// Stap 1: querySelector
+let sprint5Link = document.querySelector ('a[href="#sprint-5"]')
+
+// Stap 2: addEventListener
+sprint5Link.addEventListener ("focus", downHandler)
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// scaleLink.classList.toggle..
+function downHandler() {
+  sprint5Link.classList.add ("down")
+}
+
+sprint5Link.addEventListener("animationend", function(){
+  sprint5Link.classList.remove("down")
+})
+
+
+
+
+
+
 
 
 
