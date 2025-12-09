@@ -208,3 +208,29 @@ a[href="#sprint-5"] {
   }
 }
 
+
+
+
+
+
+/* Mousout animation on the "The" link */
+a[href="#the"] {
+  color: var(--highlight-secondary);
+}
+
+.rotate {
+  animation-name: --rotateUp;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
+
+@keyframes --rotateUp {
+  0% { 
+    transform: rotate(0deg); 
+  }
+
+  100% { 
+    transform: rotate(360deg); 
+  }  
+} 

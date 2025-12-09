@@ -106,6 +106,38 @@ sprint5Link.addEventListener("animationend", function(){
 
 
 
+// 7 knop the
+// Stap 1: querySelector
+let theLink = document.querySelector('a[href="#the"]')
+
+// Stap 2: addEventListener
+theLink.addEventListener("mouseout", cirkleHandler)
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// scaleLink.classList.toggle..
+function cirkleHandler() {
+  theLink.classList.add ("rotate")
+}
+
+theLink.addEventListener("animationend", function(){
+  theLink.classList.remove("rotate")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
