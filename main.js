@@ -84,6 +84,7 @@ developmentLink.addEventListener("animationend", function(){
 })
 
 
+
 // 5 knop sprint5
 // Stap 1: querySelector
 let sprint5Link = document.querySelector ('a[href="#sprint-5"]')
@@ -105,7 +106,6 @@ sprint5Link.addEventListener("animationend", function(){
 
 
 
-
 // 7 knop the
 // Stap 1: querySelector
 let theLink = document.querySelector('a[href="#the"]')
@@ -122,6 +122,45 @@ function cirkleHandler() {
 theLink.addEventListener("animationend", function(){
   theLink.classList.remove("rotate")
 })
+
+
+
+// 8 knop flow
+// Stap 1: querySelector
+let flipLink = document.querySelector('a[href="#flow"]')
+
+// Stap 2: addEventListener
+flipLink.addEventListener("mousedown", flipDownHandler)
+flipLink.addEventListener("mouseup", flipUpHandler)
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// scaleLink.classList.toggle..
+function flipDownHandler() {
+  flipLink.classList.add("flip")
+}
+
+function flipUpHandler() {
+  flipLink.classList.remove("flip")
+}
+
+flipLink.addEventListener("animationend", function(){
+  flipLink.classList.remove("flip")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

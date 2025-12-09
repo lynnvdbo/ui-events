@@ -234,3 +234,36 @@ a[href="#the"] {
     transform: rotate(360deg); 
   }  
 } 
+
+
+
+/* Mousedown en mouseup animation on the "Flow" link */
+a[href="#flow"] {
+  color: var(--primary);  
+}
+
+.flip {
+  animation-name: --flip;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.flip:hover {
+  background-color: var(--highlight-primary);
+  color: var(--secondary);
+}
+
+@keyframes --flip {
+  0% { 
+    transform: rotateY(0deg); 
+  }
+
+  25% { 
+    transform: rotateY(180deg); 
+  }
+  
+  100% { 
+    transform: rotateY(0deg); 
+  }  
+}
+
