@@ -104,6 +104,26 @@ sprint5Link.addEventListener("animationend", function(){
 
 
 
+// 6 knop fix
+// Stap 1: querySelector
+let fixLink = document.querySelector ('a[href="#fix"]') 
+let hoverTekst = 'KieKeBoE';
+
+// Stap 2: addEventListener
+fixLink.addEventListener("mouseover", fixOverHandler)
+fixLink.addEventListener("mouseout", fixOutHandler)
+
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// scaleLink.classList.toggle..
+function fixOverHandler() {
+  fixLink.textContent = hoverTekst
+}
+
+function fixOutHandler() {
+  fixLink.textContent = ("Fix") 
+}
+
 
 
 // 7 knop the

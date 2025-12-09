@@ -209,8 +209,15 @@ a[href="#sprint-5"] {
 }
 
 
+/* Mouseover animation on the Fix link */
+a[href="#fix"] {
+  color: var(--primary);
+}
 
-
+a[href="#fix"]:hover {
+  color: var(--highlight-primary);
+  border-radius: 4px
+}
 
 
 /* Mousout animation on the "The" link */
