@@ -274,3 +274,16 @@ a[href="#flow"] {
   }  
 }
 
+
+/* Keyup animation on the "User" link */
+.user-a {
+  color: orange;  
+}
+
+.user-h {
+  color: palegreen;
+}
+
+.user-m {
+  color: palevioletred;
+}

@@ -169,6 +169,29 @@ flipLink.addEventListener("animationend", function(){
 
 
 
+/* 9 knop User */
+// Stap 1: querySelector
+let userLink = document.querySelector('a[href="#user"]')
+
+// Stap 2: addEventListener
+document.addEventListener("keyup", function (event) {
+
+  userLink.classList.remove("user-a", "user-h", "user-m")
+
+  let letter = event.key.toLowerCase()
+
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  // scaleLink.classList.toggle..
+  userLink.classList.add("user-" + letter)
+})
+
+
+
+
+
+
+
+
 
 
 
