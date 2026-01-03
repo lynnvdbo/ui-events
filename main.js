@@ -187,6 +187,35 @@ document.addEventListener("keyup", function (event) {
 
 
 
+/* 10 knop Interface */
+// Stap 1: querySelector 
+let blowupLink = document.querySelector('a[href="#interface"]')
+
+// Stap 2: addEventListener 
+document.addEventListener("keydown", () => {
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  blowupLink.classList.add('blowup')
+});
+
+document.addEventListener("keyup", () => {
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  blowupLink.classList.remove('blowup')
+});
+
+// Extra: class verwijderen aan einde van animatie
+blowupLink.addEventListener("animationend", function(){
+  blowupLink.classList.remove("blowup")
+})
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -287,3 +287,20 @@ a[href="#flow"] {
 .user-m {
   color: palevioletred;
 }
+
+
+/* Keydown animation on the "Interface" link */
+a[href="#interface"] {
+  color: var(--secondary);  
+  background-color: #7ce7c9;
+  transition: transform 1.5s ease;
+}
+
+a[href="#interface"]:hover{
+  color: var(--primary);  
+  background-color: var(--highlight-secondary);
+}
+
+.blowup {
+  transform: scale(4);
+}
