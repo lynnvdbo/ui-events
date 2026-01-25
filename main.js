@@ -209,9 +209,29 @@ blowupLink.addEventListener("animationend", function(){
 
 
 
+/* 11 knop Events */
+// Stap 1: querySelector 
+const wheelScroll = document.querySelector('a[href="#events"]')
 
+// Stap 2: addEventListener 
+document.addEventListener('wheel', wheelDownHandler)
+document.addEventListener('wheel', wheelUpHandler)
 
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// als je naar beneden scrollt wordt hij groter
+function wheelDownHandler(event) {
+  if (event.deltaX > 0) {
+    wheelScroll.classList.remove('wheel-font');
+  }
+}
 
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// als je weer omhoog scrollt wordt hij kleiner
+function wheelUpHandler(event) {
+  if (event.deltaY < 0) {
+    wheelScroll.classList.add('wheel-font');
+  }
+}
 
 
 

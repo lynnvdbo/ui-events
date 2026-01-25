@@ -304,3 +304,22 @@ a[href="#interface"]:hover{
 .blowup {
   transform: scale(4);
 }
+
+
+/* Wheel of scroll animation on the "Events" link */
+a[href="#events"] {
+  color: var(--secondary);  
+  background-color: #7ce7c9;
+  transition: font-size 2s ease;
+}
+
+a[href="#events"]:hover{
+  color: var(--primary);  
+  background-color: var(--highlight-secondary);
+}
+
+.wheel-font {
+  font-size: 3em;
+}
+
+
