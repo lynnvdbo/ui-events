@@ -323,3 +323,18 @@ a[href="#events"]:hover{
 }
 
 
+
+/* Mousemove → radial gradient die de muis volgt on the "Interaction" link */
+.hover-gradient {
+  --x: 50px;
+  --y: 50px;
+  background: radial-gradient( 
+    circle at var(--x) var(--y),
+    #d986ff 10%,
+    transparent 50%
+  ) 
+}
+
+
+
+

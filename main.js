@@ -235,23 +235,29 @@ function wheelUpHandler(event) {
 
 
 
+/* 12 knop Interaction */
+// Stap 1: querySelector 
+const mouseFollow = document.querySelector('a[href="#interaction"]')
 
+// Stap 2: addEventListener 
+mouseFollow.addEventListener("mousemove", function (event) {
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  mouseFollow.classList.add("hover-gradient");
+  
+  // zoeken waar de muis is
+  const x = event.offsetX;
+  const y = event.offsetY;
 
+  // custom property
+  mouseFollow.style.setProperty("--x", x + "px");
+  mouseFollow.style.setProperty("--y", y + "px");
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Stap 2: addEventListener 
+mouseFollow.addEventListener("mouseout", function () {
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  mouseFollow.classList.remove("hover-gradient");
+})
 
 
 
